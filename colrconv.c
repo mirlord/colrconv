@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
         int b5 = b8 >> 3; // 5-bit blue
         unsigned short rgb565_b = b5 + (g6 << 5) + (r5 << (5 + 6));
 
-        printf("%s -> 0x00%X\n", rgb888, rgb565_b);
+        printf("%s -> 0x00%04X\n", rgb888, rgb565_b);
     }
 }
 
